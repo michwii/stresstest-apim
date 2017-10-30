@@ -25,6 +25,7 @@ app.get('/backend_simple_soap', function (req, res) {
 });
 
 function sendDelayedResponse(res, json){
+  res.status(200) ;
   res.json(json);
 }
 
