@@ -1,19 +1,3 @@
-/*
-var http = require('http');
-
-var server = http.createServer(function(request, response) {
-
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World!");
-
-});
-
-var port = process.env.PORT || 1337;
-server.listen(port);
-
-console.log("Server running at http://localhost:%d", port);
-*/
-
 var express = require('express')
 var app = express()
 
@@ -31,6 +15,11 @@ app.get('/', function (req, res){
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/backend_simple_rest', function (req, res) {
+  objectJSON.id = Math.floor((Math.random() * 10) + 1);
+  setTimeout(sendDelayedResponse.bind(null, res, objectJSON), 100);
+});
+
+app.get('/backend_simple_soap', function (req, res) {
   objectJSON.id = Math.floor((Math.random() * 10) + 1);
   setTimeout(sendDelayedResponse.bind(null, res, objectJSON), 100);
 });
