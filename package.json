@@ -1,23 +1,14 @@
 {
-  "name": "stresstest-apim",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "npm test",
-    "start" : "node server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/michwii/stresstest-apim.git"
-  },
-  "author": "Elyes Hachem",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/michwii/stresstest-apim/issues"
-  },
-  "homepage": "https://github.com/michwii/stresstest-apim#readme",
-  "dependencies": {
-    "express": "^4.16.2"
-  }
+    "name": "app-service-hello-world",
+    "description": "Simple Hello World Node.js sample for Azure App Service",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Microsoft",
+    "engines": {
+        "node": ">=6.9.1"
+    },
+    "scripts": {
+        "start": "node index.js"
+    }
 }
