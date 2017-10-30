@@ -9,6 +9,10 @@ var objectJSON = {
   email : "matthias.blanquer@axa.fr"
 }
 
+app.get('/', function (req, res){
+  res.json("Je suis une page index")
+});
+
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/backend_simple_rest', function (req, res) {
   objectJSON.id = Math.floor((Math.random() * 10) + 1);
@@ -18,3 +22,7 @@ app.get('/backend_simple_rest', function (req, res) {
 function sendDelayedResponse(res, json){
   res.json(json);
 }
+
+app.listen(80, function () {
+  console.log('Example app listening on port 80!');
+})
