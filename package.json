@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/michwii/stresstest-apim/issues"
   },
-  "homepage": "https://github.com/michwii/stresstest-apim#readme"
+  "homepage": "https://github.com/michwii/stresstest-apim#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
