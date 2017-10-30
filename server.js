@@ -23,6 +23,6 @@ function sendDelayedResponse(res, json){
   res.json(json);
 }
 
-app.listen(80, function () {
+app.listen(process.env.PORT || 1337, function () {
   console.log('Example app listening on port 80!');
 })
